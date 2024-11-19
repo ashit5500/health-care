@@ -10,6 +10,7 @@ import { SamplesModule } from './modules/samples/samples.module';
 import { SampleResultsModule } from './modules/sample-results/sample-results.module';
 import { DiseaseModule } from './modules/disease/disease.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { PermissionsModule } from './modules/permissions/permissions.module';
 
 @Module({
   imports: [
@@ -23,7 +24,7 @@ import { MongooseModule } from '@nestjs/mongoose';
         uri: configService.get<string>('DB_URI'),
       }),
     }),
-    OrganizationModule, UsersModule, ProjectsModule, SitesModule, SamplesModule, SampleResultsModule, DiseaseModule],
+    OrganizationModule, UsersModule, ProjectsModule, SitesModule, SamplesModule, SampleResultsModule, DiseaseModule, PermissionsModule],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -1,0 +1,15 @@
+export enum UserType {
+    ERP = "erp",
+    COMPANY = "company",
+    CUSTOMER = "customer",
+    ENGINEER = "engineer",
+    STUDENT = "student",
+    ACCOUNTANT = "accountant",
+    STAFF = "staff",
+    LABOR = "labor",
+    CONTRACTOR = "contractor",
+    DEALER = "dealer",
+    DRIVER = "driver",
+    WAITER = "waiter",
+    LIBRARIAN = "librarian",
+}
